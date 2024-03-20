@@ -1,6 +1,6 @@
-NAME = Bureaucrate
+NAME = Bur
 
-SRCS = Bureaucrate.cpp
+SRCS = Bureaucrat.cpp main.cpp
 
 CC = c++
 
@@ -10,7 +10,7 @@ OBJS = $(SRCS:.cpp=.o)
 
 all: $(NAME)
 
-%.o: %.cpp
+%.o: %.cpp Bureaucrate.hpp
 	$(CC) $(FLAGS)  -c $< -o $@
 
 $(NAME): $(OBJS) 

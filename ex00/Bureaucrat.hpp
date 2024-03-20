@@ -6,19 +6,20 @@
 /*   By: saboulal <saboulal@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/20 10:23:07 by saboulal          #+#    #+#             */
-/*   Updated: 2024/03/20 10:29:05 by saboulal         ###   ########.fr       */
+/*   Updated: 2024/03/20 15:07:51 by saboulal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 
 #include<iostream>
-
+#include <exception>
 class Bureaucrat
 {
 private:
     std::string const _name;
     int _grade;
 public:
+    Bureaucrat();
     Bureaucrat(std::string const name, int grade);
     Bureaucrat(Bureaucrat const & src);
     ~Bureaucrat();
