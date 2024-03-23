@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Bureaucrat.cpp                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: saboulal <saboulal@student.42.fr>          +#+  +:+       +#+        */
+/*   By: saboulal <saboulal@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/20 10:23:13 by saboulal          #+#    #+#             */
-/*   Updated: 2024/03/22 18:24:35 by saboulal         ###   ########.fr       */
+/*   Updated: 2024/03/21 17:34:39 by saboulal         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,6 @@ Bureaucrat::Bureaucrat(Bureaucrat const & src) : _name(src._name)
 
 Bureaucrat::~Bureaucrat()
 {
-    std::cout << "Bureaucrat " << _name << " is dead" << std::endl;
 }
 
 Bureaucrat & Bureaucrat::operator=(Bureaucrat const & src)
